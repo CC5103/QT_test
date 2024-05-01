@@ -1,12 +1,5 @@
-# !/usr/bin/python
 # -*- coding: utf-8 -*-
 
-"""
-@contact: 微信 1257309054
-@file: main_das.py
-@time: 2022/3/25 14:27
-@author: LDC
-"""
 import json
 import time
 
@@ -20,7 +13,7 @@ from PyQt5.QtChart import QChart, QValueAxis, QChartView, QSplineSeries
 
 class Window(QMainWindow, Ui_MainWindow):
     def __init__(self, app):
-        super(QMainWindow, self).__init__()
+        super(Window, self).__init__()
         self.app = app
         self.setup_ui()  # 渲染画布
         self.update_data_thread = UpdateDataThread()  # 创建更新波形数据线程
